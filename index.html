@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./styles/game.css">
+    <link rel="stylesheet" href="./styles/sides.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<body>
+    
+    <header>
+
+        <h1>
+            Rock Paper Scissor
+        </h1>
+
+    </header>
+
+    <!-- Main , Play area built -->
+    <main>
+
+        <!--  Human Side -->
+        <section class="human-side">
+            <div>
+                <img src="./assets/humancharacter.png" alt="Human Character" width="150px"loading="lazy">
+            </div>
+
+            <p id="human-response">
+
+            </p>
+        </section>
+
+        <section class="playarea">
+            <section class="play-buttons">
+                <button onclick="rockPaperScissor('rock');">
+                    <img src="./assets/rock.png" alt="Image of a rock"/>
+                </button>
+                <button onclick="rockPaperScissor('paper');">
+                    <img src="./assets/paper.png" alt="Image of a paper"/>
+                </button>
+                <button onclick="rockPaperScissor('scissor');">
+                    <img src="./assets/scissor.png" alt="Image of a scissor"/>
+                </button>
+            </section>
+
+            <p id="gameOutput" class="gameOutput"></p>
+
+            <p id="outcome" class="outcome"></p>
+        </section>
+
+        <!-- Bot Side -->
+        <section class="bot-side">
+            <div>
+                <img src="./assets/bot.png" alt="Bot Character"  width="150px" loading="lazy">
+            </div>
+
+            <p id="bot-response">
+
+            </p>
+        </section>
+
+        <!-- Message to display if the screen size becomes (< 751) -->
+        <p class="no-desktop-view">
+            To Play enable desktop view or have screen width(x) more than (>750)
+        </p>
+
+    </main>
+
+    <footer>
+
+        <p id="score-counter">
+
+        </p>    
+
+    </footer>
+
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

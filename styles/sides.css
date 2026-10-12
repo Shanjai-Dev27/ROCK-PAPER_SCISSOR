@@ -1,0 +1,13 @@
+.human-side, .bot-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+p{
+    margin-top: 5px;
+    font-size: 3rem;
+}
+
+@media(max-width : 750px){.human-side, .bot-side{display: none;}}   
